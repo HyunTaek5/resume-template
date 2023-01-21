@@ -1,9 +1,8 @@
 ---
 name: Feature request
 about: 기능 개발
-title: "[FEAT]"
+title: '[FEAT]'
 assignees: ''
-
 ---
 
 ## 📌 개요
