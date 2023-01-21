@@ -1,9 +1,8 @@
 ---
 name: Suggest Report
 about: '프로젝트 제안 '
-title: "[SUGGEST]"
+title: '[SUGGEST]'
 assignees: ''
-
 ---
 
 ## ✍ 제안 사항
