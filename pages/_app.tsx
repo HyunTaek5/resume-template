@@ -7,6 +7,8 @@ import Head from 'next/head';
 import React, { ReactElement, ReactNode } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
+import GNB from '../src/components/GNB';
+
 
 type Page<P = Record<string, never>> = NextPage<P> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -28,6 +30,9 @@ function App({ Component, pageProps }: Props) {
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <link rel='icon' href='/favicon.ico' />
         </Head>
+        <header>
+          <GNB />
+        </header>
 
         {getLayout(<Component {...pageProps} />)}
       </div>
