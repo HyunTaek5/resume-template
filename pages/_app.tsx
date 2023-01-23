@@ -5,6 +5,8 @@ import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React, { ReactElement, ReactNode } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+
 
 type Page<P = Record<string, never>> = NextPage<P> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -29,6 +31,13 @@ function App({ Component, pageProps }: Props) {
 
         {getLayout(<Component {...pageProps} />)}
       </div>
+
+      <ToastContainer
+        autoClose={3000}
+        hideProgressBar
+        limit={1}
+        onClick={() => toast.clearWaitingQueue()}
+      />
     </>
   );
 }
