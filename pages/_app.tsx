@@ -24,7 +24,7 @@ function App({ Component, pageProps }: Props) {
 
   return (
     <>
-      <div className='flex min-h-screen flex-1 flex-col'>
+      <div className='flex min-h-screen flex-1 flex-col bg-header-1 text-main-1'>
         <Head>
           <title>{metadata.title}</title>
           {metadata.metaList.map((meta) => (
