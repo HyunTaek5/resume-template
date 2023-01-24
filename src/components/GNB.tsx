@@ -15,7 +15,8 @@ const GNB = () => {
                       router.push(navLink.link);
                     }}>{navLink.title}
             </button>
-            <div className={`${router.asPath === navLink.link ? 'bg-main-1' : 'bg-white'} w-full h-2 rounded-md`} />
+            <div
+              className={`${router.asPath === navLink.link ? 'bg-main-1' : 'bg-white'} w-full h-2 rounded-md mt-1`} />
           </div>
         ))
       }
