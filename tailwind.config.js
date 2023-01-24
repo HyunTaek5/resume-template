@@ -9,8 +9,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'main-1': '#627070',
+        'header-1': '#FAFAFA'
+      },
       fontFamily: {
-        sans: ['Pretendard', ...defaultTheme.fontFamily.sans]
+        sans: ['Pretendard', ...defaultTheme.fontFamily.sans],
+        montserrat: ['Montserrat']
+      },
+      variants: {
+        extend: {
+          backgroundColor: ['disabled'],
+          borderColor: ['disabled'],
+          textColor: ['disabled']
+        }
       }
     }
   },
