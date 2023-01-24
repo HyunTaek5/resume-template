@@ -7,6 +7,7 @@ import Head from 'next/head';
 import React, { ReactElement, ReactNode } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
+import metadata from '../data/metadata';
 import GNB from '../src/components/GNB';
 
 
@@ -25,10 +26,11 @@ function App({ Component, pageProps }: Props) {
     <>
       <div className='flex min-h-screen flex-1 flex-col'>
         <Head>
-          <title>이력서 템플릿</title>
-          <meta name='description' content='Resume Template of Techeer' />
-          <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <link rel='icon' href='/favicon.ico' />
+          <title>{metadata.title}</title>
+          {metadata.metaList.map((meta) => (
+            <meta key={meta.id} name={meta.name} content={meta.content} />
+          ))}
+          <link rel={metadata.link.rel} href={metadata.link.href} />
         </Head>
         <header>
           <GNB />
