@@ -24,7 +24,7 @@ function App({ Component, pageProps }: Props) {
 
   return (
     <>
-      <div className='flex min-h-screen flex-1 flex-col bg-header-1 text-main-1'>
+      <div className='flex min-h-screen flex-1 flex-col bg-header-1 text-main-1 font-montserrat'>
         <Head>
           <title>{metadata.title}</title>
           {metadata.metaList.map((meta) => (
@@ -32,7 +32,7 @@ function App({ Component, pageProps }: Props) {
           ))}
           <link rel={metadata.link.rel} href={metadata.link.href} />
         </Head>
-        <header>
+        <header className='bg-white'>
           <GNB />
         </header>
 
