@@ -1,4 +1,4 @@
-export default function Home() {
+function Home() {
   return (
     <>
       <main className=''>
@@ -7,3 +7,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;
