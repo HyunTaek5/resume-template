@@ -32,7 +32,7 @@ function App({ Component, pageProps }: Props) {
           ))}
           <link rel={metadata.link.rel} href={metadata.link.href} />
         </Head>
-        <header className='bg-white'>
+        <header className='bg-white tablet:flex justify-center'>
           <GNB />
         </header>
 
