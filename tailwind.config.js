@@ -13,6 +13,9 @@ module.exports = {
         'main-1': '#627070',
         'header-1': '#FAFAFA'
       },
+      screens: {
+        'tablet': '945px'
+      },
       fontFamily: {
         sans: ['Pretendard', ...defaultTheme.fontFamily.sans],
         montserrat: ['Montserrat']
