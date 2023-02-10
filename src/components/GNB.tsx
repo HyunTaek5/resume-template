@@ -2,8 +2,8 @@ import { useRouter } from 'next/router';
 import AppleSVG from 'public/icons/apple.svg';
 import MenuSVG from 'public/icons/icon-menu.svg';
 
-import logo from '../../data/logo';
-import navLinks from '../../data/navLink';
+import logo from '../../data/header/logo';
+import navLinks from '../../data/header/navLink';
 
 const GNB = () => {
   const router = useRouter();

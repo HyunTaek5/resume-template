@@ -7,7 +7,7 @@ import Head from 'next/head';
 import React, { ReactElement, ReactNode } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
-import metadata from '../data/metadata';
+import metadata from '../data/header/metadata';
 import GNB from '../src/components/GNB';
 
 
