@@ -9,7 +9,7 @@ const GNB = () => {
   const router = useRouter();
 
   return (
-    <div className='flex h-24 mx-10  max-w-full tablet:w-full max-w-screen-xl'>
+    <div className='flex h-24 mx-10  max-w-full place-items-center tablet:w-full max-w-screen-xl'>
       <nav className='w-full flex self-center' onClick={() => {
         router.push('/');
       }}>
