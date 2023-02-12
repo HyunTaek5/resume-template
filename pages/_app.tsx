@@ -8,7 +8,6 @@ import React, { ReactElement, ReactNode } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
 import metadata from '../data/header/metadata';
-import GNB from '../src/components/GNB';
 
 
 type Page<P = Record<string, never>> = NextPage<P> & {
@@ -32,10 +31,6 @@ function App({ Component, pageProps }: Props) {
           ))}
           <link rel={metadata.link.rel} href={metadata.link.href} />
         </Head>
-        <header className='bg-white tablet:flex justify-center'>
-          <GNB />
-        </header>
-
         {getLayout(<Component {...pageProps} />)}
       </div>
 
