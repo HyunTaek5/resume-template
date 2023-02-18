@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
-import AppleSVG from 'public/icons/apple.svg';
-import MenuSVG from 'public/icons/icon-menu.svg';
+import MenuSVG from 'public/svg/icons/icon-menu.svg';
 
 import logo from '../../data/header/logo';
 import navLinks from '../../data/header/navLink';
@@ -11,9 +10,9 @@ const GNB = () => {
   return (
     <div className='flex h-24 mx-10  max-w-full place-items-center tablet:w-full max-w-screen-xl'>
       <nav className='w-full flex self-center' onClick={() => {
-        router.push('/');
+        router.replace('/');
       }}>
-        <AppleSVG className='h-9 w-fit cursor-pointer tablet:h-10 pr-3' />
+        <img className='h-9 w-fit cursor-pointer tablet:h-10 pr-3' src={'svg/icons/yarn.svg'} alt={'logoImg'} />
         <button className={'font-bold text-xl  tablet:text-2xl mt-1'}>{logo.name}</button>
       </nav>
       <nav

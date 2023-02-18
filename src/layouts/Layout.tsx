@@ -15,7 +15,7 @@ export default function Layout({ children, isWhiteBg = false }: {
       </header>
       <div
         className={`flex flex-1 flex-col ${
-          isWhiteBg ? 'bg-white' : 'bg-[#F4F4F5]'
+          isWhiteBg ? 'bg-white' : 'bg-white'
         } `}
       >
         <main className='relative flex flex-1 flex-col'>{children}</main>
