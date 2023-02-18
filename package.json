@@ -14,6 +14,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.2",
     "@next/font": "13.1.1",
     "@tailwindcss/ui": "^0.7.2",
     "@toss/utils": "^1.3.1",
