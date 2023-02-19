@@ -8,6 +8,8 @@ import React, { ReactElement, ReactNode } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
 import metadata from '../data/header/metadata';
+import navLinks from '../data/header/navLink';
+import MobileNavBar from '../src/components/MobileNavBar';
 
 
 type Page<P = Record<string, never>> = NextPage<P> & {
@@ -33,7 +35,8 @@ function App({ Component, pageProps }: Props) {
         </Head>
         {getLayout(<Component {...pageProps} />)}
       </div>
-
+      
+      <MobileNavBar navLinkList={navLinks} />
       <ToastContainer
         autoClose={3000}
         hideProgressBar

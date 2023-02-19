@@ -3,9 +3,11 @@ import MenuSVG from 'public/svg/icons/icon-menu.svg';
 
 import logo from '../../data/header/logo';
 import navLinks from '../../data/header/navLink';
+import useMobileNavBarStore from '../plugins/zustand/MobileNavBarStore';
 
-const GNB = () => {
+function GNB() {
   const router = useRouter();
+  const { toggleIsOpen } = useMobileNavBarStore();
 
   return (
     <div className='flex h-24 mx-10  max-w-full place-items-center tablet:w-full max-w-screen-xl'>
@@ -30,10 +32,10 @@ const GNB = () => {
         }
       </nav>
       <div className='flex h-full place-items-center justify-end tablet:hidden'>
-        <MenuSVG className='h-fit w-fit' />
+        <MenuSVG className='h-fit w-fit cursor-pointer' onClick={toggleIsOpen} />
       </div>
     </div>
   );
-};
+}
 
 export default GNB;
