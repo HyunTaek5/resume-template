@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Introduction from '../../data/about/introduction';
+import IntroductionSection from '../../src/components/IntroductionSection';
 import Layout from '../../src/layouts/Layout';
 
 function About() {
@@ -9,14 +10,7 @@ function About() {
   return (
     <>
       <main className='flex flex-1 justify-start'>
-        <div className='flex flex-col space-y-4'>
-          <p>{introduction.jobTitle}</p>
-          <text key='introduction-name' className='font-bold text-7xl text-main-1'>{introduction.name}</text>
-          <text key='introduction-short' className='text-left'>{introduction.shortIntroduction}</text>
-          <h2>About me</h2>
-        </div>
-
-
+        <IntroductionSection introduction={introduction} />
       </main>
     </>
   );
