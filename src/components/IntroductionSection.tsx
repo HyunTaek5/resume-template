@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Introduction } from '../../data/about/introduction/types';
+import { IntroductionType } from '../../data/about/introduction/types';
 
 interface IntroductionProps {
-  introduction: Introduction;
+  introduction: IntroductionType;
 }
 
 function IntroductionSection({ introduction }: IntroductionProps) {

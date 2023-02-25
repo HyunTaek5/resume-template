@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 
-import { navLink } from '../../data/header/navLink/types';
+import { NavLinkType } from '../../data/header/navLink/types';
 import useMobileNavBarStore from '../plugins/zustand/MobileNavBarStore';
 
 interface MobileNavBarProps {
-  navLinkList: navLink[];
+  navLinkList: NavLinkType[];
 }
 
 function MobileNavBar({ navLinkList }: MobileNavBarProps) {
