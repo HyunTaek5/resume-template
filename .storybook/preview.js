@@ -18,12 +18,12 @@ export const parameters = {
   },
   previewTabs: {
     'storybook/docs/panel': { index: -1 }
-  },
-  nextRouter: {
-    path: '/', // defaults to `/`
-    asPath: '/', // defaults to `/`
-    query: {}, // defaults to `{}`
-    push() {
-    }
   }
+  // nextRouter: {
+  //   path: '/', // defaults to `/`
+  //   asPath: '/', // defaults to `/`
+  //   query: {}, // defaults to `{}`
+  //   push() {
+  //   }
+  // }
 };
