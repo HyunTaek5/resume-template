@@ -1,6 +1,6 @@
-import { metadata } from './types';
+import { MetadataType } from './types';
 
-const metadata: metadata = {
+const metadata: MetadataType = {
   title: '이력서 템플릿',
   metaList: [
     {

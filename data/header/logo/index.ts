@@ -1,6 +1,6 @@
-import { logo } from './types';
+import { LogoType } from './types';
 
-const logo: logo = {
+const logo: LogoType = {
   name: '오현택'
 };
 

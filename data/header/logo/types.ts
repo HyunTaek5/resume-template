@@ -1,3 +1,3 @@
-export interface logo {
+export interface LogoType {
   name: string;
 }

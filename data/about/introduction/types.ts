@@ -1,4 +1,4 @@
-export interface Introduction {
+export interface IntroductionType {
   name: string,
   jobTitle: string,
   shortIntroduction: string,
