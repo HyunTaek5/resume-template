@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
-import MenuSVG from 'public/svg/icons/icon-menu.svg';
 
 import logo from '../../data/header/logo';
 import navLinks from '../../data/header/navLink';
+import MenuSVG from '../../public/svg/icons/icon-menu.svg';
 import useMobileNavBarStore from '../plugins/zustand/MobileNavBarStore';
 
 function GNB() {
