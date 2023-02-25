@@ -10,6 +10,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    'storybook-addon-next-router',
     {
       name: '@storybook/addon-postcss', options: {
         postcssLoaderOptions: {
@@ -28,12 +29,12 @@ module.exports = {
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve?.alias,
-      '@': [path.resolve(__dirname, '../src/'), path.resolve(__dirname, '../')],
+      '@': [path.resolve(__dirname, '../src/'), path.resolve(__dirname, '../')]
     };
 
     config.resolve.roots = [
       path.resolve(__dirname, '../public'),
-      'node_modules',
+      'node_modules'
     ];
 
     return config;
