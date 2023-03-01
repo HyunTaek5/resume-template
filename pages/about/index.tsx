@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Introduction from '../../data/about/introduction';
-import IntroductionSection from '../../src/components/IntroductionSection';
+import AboutMeSection from '../../src/components/Section/AboutMeSection';
+import IntroductionSection from '../../src/components/Section/IntroductionSection';
 import Layout from '../../src/layouts/Layout';
 
 function About() {
@@ -9,8 +10,9 @@ function About() {
 
   return (
     <>
-      <main className='flex flex-1 justify-start'>
+      <main className='flex flex-col mx-10 md:m-10 max-w-screen-xl'>
         <IntroductionSection introduction={introduction} />
+        <AboutMeSection />
       </main>
     </>
   );
