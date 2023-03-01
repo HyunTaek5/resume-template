@@ -1,5 +1,5 @@
 import Introduction from '../../../data/about/introduction';
-import IntroductionSection from '../../../src/components/IntroductionSection';
+import IntroductionSection from '../../../src/components/Section/IntroductionSection';
 
 export default {
   title: 'Component/Section/IntroductionSection'
