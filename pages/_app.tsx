@@ -25,7 +25,7 @@ function App({ Component, pageProps }: Props) {
 
   return (
     <>
-      <div className='flex min-h-screen flex-1 flex-col text-main-1 font-montserrat'>
+      <div className='flex flex-1 flex-col text-main-1 font-montserrat min-h-screen bg-white tablet:px-10'>
         <Head>
           <title>{metadata.title}</title>
           {metadata.metaList.map((meta) => (
@@ -35,7 +35,7 @@ function App({ Component, pageProps }: Props) {
         </Head>
         {getLayout(<Component {...pageProps} />)}
       </div>
-      
+
       <MobileNavBar navLinkList={navLinks} />
       <ToastContainer
         autoClose={3000}
