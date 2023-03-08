@@ -18,7 +18,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Pretendard', ...defaultTheme.fontFamily.sans],
-        montserrat: ['Montserrat']
+        montserrat: ['Montserrat'],
+        tinos: ['Tinos']
       },
       variants: {
         extend: {
