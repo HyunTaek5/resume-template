@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutMe from '../../data/about/aboutMe';
 import Introduction from '../../data/about/introduction';
 import AboutMeSection from '../../src/components/Section/AboutMeSection';
 import IntroductionSection from '../../src/components/Section/IntroductionSection';
@@ -7,12 +8,13 @@ import Layout from '../../src/layouts/Layout';
 
 function About() {
   const introduction = Introduction;
+  const aboutMe = AboutMe;
 
   return (
     <>
-      <main className='flex flex-col mx-10 md:m-10 max-w-screen-xl'>
+      <main className='flex flex-col mx-10 tablet:mt-52 max-w-screen-xl'>
         <IntroductionSection introduction={introduction} />
-        <AboutMeSection />
+        <AboutMeSection aboutMe={aboutMe} />
       </main>
     </>
   );

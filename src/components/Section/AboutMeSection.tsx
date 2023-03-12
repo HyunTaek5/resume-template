@@ -1,11 +1,16 @@
-function AboutMeSection() {
+import { AboutMeType } from '../../../data/about/aboutMe/types';
+
+interface AboutMeProps {
+  aboutMe: AboutMeType;
+}
+
+function AboutMeSection({ aboutMe }: AboutMeProps) {
 
   return (
     <>
       <div className='flex flex-col space-y-4'>
-        <h2>About Me</h2>
-        {/*<text key='introduction-name' className='font-bold text-7xl text-main-1'>{introduction.name}</text>*/}
-        {/*<text key='introduction-short' className='text-left'>{introduction.shortIntroduction}</text>*/}
+        <h2 className='text-2xl font-semibold'>About Me</h2>
+        <p className='text-black'>{aboutMe.body}</p>
       </div>
     </>
   );
